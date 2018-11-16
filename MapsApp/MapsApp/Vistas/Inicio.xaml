@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapsApp.Inicio">
+    <ContentPage.Content>
+        <Grid x:Name="GridMenu" Padding="2,0" VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+
+            <!--Fila 3-->
+            <Image x:Name="iPosicion" Source="gpsok.png"  Grid.Row="1" Grid.Column="2" Aspect="AspectFit" VerticalOptions="EndAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Clic" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Text="ENVIAR"  Grid.Row="2" Grid.Column="2" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="End" FontSize="Micro"/>
+        </Grid>
+    </ContentPage.Content>
+    <!--ContentPage.Content>
+         <StackLayout Orientation="Vertical" BackgroundColor="White" Opacity="0.8">
+            <StackLayout Orientation="Vertical">
+                <Entry x:Name="etLatitud" TextColor="Gray" Placeholder="Latitud" PlaceholderColor="Gray" Keyboard="Email" FontSize="18" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="etLongitud" TextColor="Gray" Placeholder="Longitud" PlaceholderColor="Gray" Keyboard="Email" FontSize="18" HorizontalTextAlignment="Start"/>
+                <Button x:Name ="BuAcceso" Margin="0,3" Text="OK" BackgroundColor="#0072BD" TextColor="White" FontSize="Micro" HeightRequest="50" Clicked="Clic"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content-->
+</ContentPage>
